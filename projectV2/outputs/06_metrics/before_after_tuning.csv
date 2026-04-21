@@ -1,0 +1,5 @@
+variant,accuracy,f1_macro,note
+KNN k=1 (cosine),1.0,1.0,default
+KNN k=3 (cosine),1.0,1.0,k=3
+KNN k=5 (cosine),1.0,1.0,k=5
+Cosine Threshold Matcher,1.0,1.0,thresh=0.4

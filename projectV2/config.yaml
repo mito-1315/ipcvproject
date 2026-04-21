@@ -1,0 +1,78 @@
+# ============================================================
+# config.yaml — Project Version Two (ArcFace + InsightFace)
+# ============================================================
+
+random_seed: 42
+
+paths:
+  dataset_dir: "../Dataset"
+  output_dir: "outputs"
+  models_dir: "models"
+  logs_dir: "logs"
+
+dataset:
+  num_subjects: 40
+  images_per_subject: 10
+  image_width: 92
+  image_height: 112
+  # Resize target for InsightFace input
+  resize_width: 160
+  resize_height: 160
+
+split:
+  test_size: 0.3        # 3 images per subject for test
+  train_per_subject: 7
+  test_per_subject: 3
+
+# InsightFace / ArcFace
+insightface:
+  model_name: "buffalo_l"
+  providers: ["CPUExecutionProvider"]
+  det_size: [160, 160]
+  det_score_thresh: 0.3
+  embedding_dim: 512
+
+# KNN classifier
+knn:
+  k_values: [1, 3, 5]
+  default_k: 1
+  metric: "cosine"
+
+# Cosine-threshold matcher
+cosine_matcher:
+  threshold: 0.4        # cosine distance threshold
+
+# OpenCV preprocessing
+preprocessing:
+  gaussian_ksize: [5, 5]
+  gaussian_sigma: 0
+  median_ksize: 3
+  sharpen_blur_ksize: [9, 9]
+  sharpen_sigma: 10.0
+  sharpen_alpha: 1.5
+  sharpen_beta: -0.5
+  clahe_clip_limit: 2.0
+  clahe_tile_grid: [8, 8]
+
+# Canny edge detection
+canny:
+  threshold1: 50
+  threshold2: 150
+
+# HOG (for comparison visualization)
+hog:
+  pixels_per_cell: [8, 8]
+  cells_per_block: [2, 2]
+  orientations: 9
+
+# t-SNE
+tsne:
+  n_components: 2
+  perplexity: 30
+  n_iter: 1000
+
+# Visualization
+visualization:
+  dpi: 150
+  figure_size: [16, 10]
+  sample_grid: [8, 5]

@@ -1,0 +1,5 @@
+model,accuracy,precision_macro,recall_macro,f1_macro,train_time_s,inference_time_s
+knn_k1,1.0,1.0,1.0,1.0,0.001,0.018
+knn_k3,1.0,1.0,1.0,1.0,0.0,0.0172
+knn_k5,1.0,1.0,1.0,1.0,0.0,0.017
+cosine_matcher,1.0,1.0,1.0,1.0,0.0,0.0004

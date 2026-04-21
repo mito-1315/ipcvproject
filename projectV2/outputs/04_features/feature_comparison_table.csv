@@ -1,0 +1,5 @@
+method,dimension,accuracy,notes
+Raw Pixels,10304,~80%,"baseline, no feature extraction"
+PCA (Eigenfaces),100,~90%,classical dimensionality reduction
+HOG,~8100,~88%,handcrafted gradient features
+ArcFace (InsightFace),512,~95%+,"deep pretrained, cosine similarity"

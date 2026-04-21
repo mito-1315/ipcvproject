@@ -1,0 +1,142 @@
+2026-04-22 00:43:51,088 [INFO] src.data_loader — Loaded 400 images | 40 subjects | shape (400, 160, 160, 3)
+2026-04-22 00:43:51,130 [INFO] main_v2 — Loaded: 400 BGR images, 400 gray images
+2026-04-22 00:43:51,132 [INFO] src.data_loader — Folder structure → outputs\01_dataset_structure\folder_structure.txt
+2026-04-22 00:43:51,258 [INFO] src.data_loader — Folder tree image → outputs\01_dataset_structure\folder_tree_visualization.png
+2026-04-22 00:43:51,264 [INFO] src.data_loader — Class CSV → outputs\02_sample_images\images_per_class_table.csv
+2026-04-22 00:43:52,759 [INFO] src.data_loader — Sample grid → outputs\02_sample_images\samples_per_class.png
+2026-04-22 00:43:52,894 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_histogram_eq.png
+2026-04-22 00:43:53,024 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_gaussian.png
+2026-04-22 00:43:53,156 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_median.png
+2026-04-22 00:43:53,288 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_sharpen.png
+2026-04-22 00:43:53,288 [INFO] src.preprocessing — Filter explanations → outputs\03_filters\filter_explanations.txt
+2026-04-22 00:43:53,435 [INFO] src.preprocessing — CLAHE comparison → outputs\08_extra_ipcv\clahe_comparison.png
+2026-04-22 00:43:53,576 [INFO] src.preprocessing — Canny edge map → outputs\08_extra_ipcv\canny_edge_map.png
+2026-04-22 00:43:53,833 [INFO] src.preprocessing — Histogram CLAHE comparison → outputs\08_extra_ipcv\histogram_clahe_comparison.png
+2026-04-22 00:43:53,983 [INFO] src.preprocessing — Fourier spectrum → outputs\08_extra_ipcv\fourier_transform_spectrum.png
+2026-04-22 00:43:54,712 [INFO] src.embeddings — Initialising InsightFace model 'buffalo_l' (may download on first run)…
+2026-04-22 00:44:13,811 [INFO] src.embeddings — InsightFace ready.
+2026-04-22 00:44:13,811 [INFO] src.embeddings — Extracting embeddings for 400 images…
+2026-04-22 00:44:19,875 [INFO] src.embeddings —   50/400 done | detected: 50
+2026-04-22 00:44:25,519 [INFO] src.embeddings —   100/400 done | detected: 100
+2026-04-22 00:44:31,201 [INFO] src.embeddings —   150/400 done | detected: 150
+2026-04-22 00:44:36,790 [INFO] src.embeddings —   200/400 done | detected: 200
+2026-04-22 00:44:42,505 [INFO] src.embeddings —   250/400 done | detected: 250
+2026-04-22 00:44:48,247 [INFO] src.embeddings —   300/400 done | detected: 300
+2026-04-22 00:44:53,785 [INFO] src.embeddings —   350/400 done | detected: 350
+2026-04-22 00:44:59,553 [INFO] src.embeddings —   400/400 done | detected: 400
+2026-04-22 00:44:59,554 [INFO] src.embeddings — Embedding extraction complete. Faces detected: 400/400
+2026-04-22 00:44:59,555 [INFO] src.embeddings — Embeddings cached → models\arcface_embeddings.npy
+2026-04-22 00:44:59,665 [INFO] src.preprocessing — RetinaFace landmarks → outputs\08_extra_ipcv\retinaface_landmarks.png
+2026-04-22 00:45:00,156 [INFO] src.visualization — Running t-SNE (this may take ~30s)…
+2026-04-22 00:45:35,321 [INFO] src.data_loader — Loaded 400 images | 40 subjects | shape (400, 160, 160, 3)
+2026-04-22 00:45:35,363 [INFO] main_v2 — Loaded: 400 BGR images, 400 gray images
+2026-04-22 00:45:35,366 [INFO] src.data_loader — Folder structure → outputs\01_dataset_structure\folder_structure.txt
+2026-04-22 00:45:35,484 [INFO] src.data_loader — Folder tree image → outputs\01_dataset_structure\folder_tree_visualization.png
+2026-04-22 00:45:35,490 [INFO] src.data_loader — Class CSV → outputs\02_sample_images\images_per_class_table.csv
+2026-04-22 00:45:36,933 [INFO] src.data_loader — Sample grid → outputs\02_sample_images\samples_per_class.png
+2026-04-22 00:45:37,063 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_histogram_eq.png
+2026-04-22 00:45:37,189 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_gaussian.png
+2026-04-22 00:45:37,318 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_median.png
+2026-04-22 00:45:37,448 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_sharpen.png
+2026-04-22 00:45:37,448 [INFO] src.preprocessing — Filter explanations → outputs\03_filters\filter_explanations.txt
+2026-04-22 00:45:37,588 [INFO] src.preprocessing — CLAHE comparison → outputs\08_extra_ipcv\clahe_comparison.png
+2026-04-22 00:45:37,725 [INFO] src.preprocessing — Canny edge map → outputs\08_extra_ipcv\canny_edge_map.png
+2026-04-22 00:45:37,927 [INFO] src.preprocessing — Histogram CLAHE comparison → outputs\08_extra_ipcv\histogram_clahe_comparison.png
+2026-04-22 00:45:38,071 [INFO] src.preprocessing — Fourier spectrum → outputs\08_extra_ipcv\fourier_transform_spectrum.png
+2026-04-22 00:45:38,727 [INFO] src.embeddings — Initialising InsightFace model 'buffalo_l' (may download on first run)…
+2026-04-22 00:45:39,676 [INFO] src.embeddings — InsightFace ready.
+2026-04-22 00:45:39,677 [INFO] src.embeddings — Loading cached embeddings from disk…
+2026-04-22 00:45:39,678 [INFO] src.embeddings — Loaded 400 cached embeddings.
+2026-04-22 00:45:39,795 [INFO] src.preprocessing — RetinaFace fallback landmarks → outputs\08_extra_ipcv\retinaface_landmarks.png
+2026-04-22 00:45:40,321 [INFO] src.visualization — Running t-SNE (this may take ~30s)…
+2026-04-22 00:45:42,284 [INFO] src.visualization — t-SNE plot → outputs\04_features\arcface_embedding_tsne.png
+2026-04-22 00:45:42,482 [INFO] src.visualization — PCA 2D plot → outputs\04_features\arcface_embedding_pca.png
+2026-04-22 00:45:42,708 [INFO] src.visualization — Embedding histogram → outputs\04_features\embedding_histogram.png
+2026-04-22 00:45:42,861 [INFO] src.visualization — HOG visualization → outputs\04_features\hog_visualization_sample.png
+2026-04-22 00:45:43,068 [INFO] src.visualization — Pixel histogram → outputs\04_features\pixel_intensity_histogram.png
+2026-04-22 00:45:43,070 [INFO] src.visualization — Feature comparison table → outputs\04_features\feature_comparison_table.csv
+2026-04-22 00:45:43,074 [INFO] src.train — Split: 280 train / 120 test (40 classes)
+2026-04-22 00:45:43,074 [INFO] src.train — Training KNN k=1 (cosine metric)…
+2026-04-22 00:45:43,075 [INFO] src.train —   KNN k=1 trained in 0.001s
+2026-04-22 00:45:43,075 [INFO] src.train — Training KNN k=3 (cosine metric)…
+2026-04-22 00:45:43,076 [INFO] src.train —   KNN k=3 trained in 0.000s
+2026-04-22 00:45:43,076 [INFO] src.train — Training KNN k=5 (cosine metric)…
+2026-04-22 00:45:43,076 [INFO] src.train —   KNN k=5 trained in 0.000s
+2026-04-22 00:45:43,076 [INFO] src.train — Training CosineThresholdMatcher (threshold=0.4)…
+2026-04-22 00:45:43,076 [INFO] src.classifier — CosineThresholdMatcher fitted on 280 samples.
+2026-04-22 00:45:43,077 [INFO] src.train — Best classifier (KNN k=1) saved → models\classifier.pkl
+2026-04-22 00:45:43,137 [INFO] src.evaluate — Accuracy: 1.0000 | F1: 1.0000 | Inf: 20.7ms
+2026-04-22 00:45:43,158 [INFO] src.evaluate — Accuracy: 1.0000 | F1: 1.0000 | Inf: 17.1ms
+2026-04-22 00:45:43,180 [INFO] src.evaluate — Accuracy: 1.0000 | F1: 1.0000 | Inf: 18.0ms
+2026-04-22 00:45:43,184 [INFO] src.evaluate — Accuracy: 1.0000 | F1: 1.0000 | Inf: 0.5ms
+2026-04-22 00:45:43,687 [INFO] src.evaluate — Confusion matrix → outputs\06_metrics\confusion_matrix.png
+2026-04-22 00:45:43,692 [INFO] src.evaluate — Classification report → outputs\06_metrics\classification_report.txt
+2026-04-22 00:45:43,694 [INFO] src.evaluate — Performance metrics → outputs\06_metrics\performance_metrics.csv
+2026-04-22 00:45:43,695 [INFO] src.evaluate — Before/after tuning → outputs\06_metrics\before_after_tuning.csv
+2026-04-22 00:45:43,696 [INFO] src.train — Split: 280 train / 120 test (40 classes)
+2026-04-22 00:45:45,139 [INFO] src.evaluate — Prediction grid → outputs\05_results\predictions_with_bboxes.png
+2026-04-22 00:45:46,668 [INFO] src.evaluate — Prediction grid → outputs\05_results\correct_predictions_grid.png
+2026-04-22 00:45:46,668 [WARNING] src.evaluate — No images for incorrect_predictions_grid.png
+2026-04-22 00:45:47,652 [INFO] src.evaluate — Annotated predictions → outputs\08_extra_ipcv\annotated_predictions.png
+2026-04-22 00:45:47,659 [INFO] src.predict — Classifier and embeddings loaded.
+2026-04-22 00:45:47,659 [INFO] src.embeddings — Initialising InsightFace model 'buffalo_l' (may download on first run)…
+2026-04-22 00:45:48,778 [INFO] src.embeddings — InsightFace ready.
+2026-04-22 00:45:48,932 [INFO] src.predict — Predicted: s5 | Confidence: 1.0000 | Inference: 18.1ms
+2026-04-22 00:45:49,016 [INFO] src.predict — Inference demo saved → outputs\05_results\inference_demo_single.png
+2026-04-22 00:45:49,323 [INFO] src.visualization — Pipeline diagram → outputs\07_pipeline\pipeline_diagram.png
+2026-04-22 00:46:28,219 [INFO] src.data_loader — Loaded 400 images | 40 subjects | shape (400, 160, 160, 3)
+2026-04-22 00:46:28,262 [INFO] main_v2 — Loaded: 400 BGR images, 400 gray images
+2026-04-22 00:46:28,264 [INFO] src.data_loader — Folder structure → outputs\01_dataset_structure\folder_structure.txt
+2026-04-22 00:46:28,396 [INFO] src.data_loader — Folder tree image → outputs\01_dataset_structure\folder_tree_visualization.png
+2026-04-22 00:46:28,402 [INFO] src.data_loader — Class CSV → outputs\02_sample_images\images_per_class_table.csv
+2026-04-22 00:46:30,015 [INFO] src.data_loader — Sample grid → outputs\02_sample_images\samples_per_class.png
+2026-04-22 00:46:30,147 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_histogram_eq.png
+2026-04-22 00:46:30,276 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_gaussian.png
+2026-04-22 00:46:30,408 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_median.png
+2026-04-22 00:46:30,549 [INFO] src.preprocessing — Filter comparison → outputs\03_filters\before_after_sharpen.png
+2026-04-22 00:46:30,549 [INFO] src.preprocessing — Filter explanations → outputs\03_filters\filter_explanations.txt
+2026-04-22 00:46:30,697 [INFO] src.preprocessing — CLAHE comparison → outputs\08_extra_ipcv\clahe_comparison.png
+2026-04-22 00:46:30,847 [INFO] src.preprocessing — Canny edge map → outputs\08_extra_ipcv\canny_edge_map.png
+2026-04-22 00:46:31,060 [INFO] src.preprocessing — Histogram CLAHE comparison → outputs\08_extra_ipcv\histogram_clahe_comparison.png
+2026-04-22 00:46:31,204 [INFO] src.preprocessing — Fourier spectrum → outputs\08_extra_ipcv\fourier_transform_spectrum.png
+2026-04-22 00:46:31,836 [INFO] src.embeddings — Initialising InsightFace model 'buffalo_l' (may download on first run)…
+2026-04-22 00:46:32,699 [INFO] src.embeddings — InsightFace ready.
+2026-04-22 00:46:32,699 [INFO] src.embeddings — Loading cached embeddings from disk…
+2026-04-22 00:46:32,700 [INFO] src.embeddings — Loaded 400 cached embeddings.
+2026-04-22 00:46:32,831 [INFO] src.preprocessing — RetinaFace fallback landmarks → outputs\08_extra_ipcv\retinaface_landmarks.png
+2026-04-22 00:46:33,456 [INFO] src.visualization — Running t-SNE (this may take ~30s)…
+2026-04-22 00:46:35,450 [INFO] src.visualization — t-SNE plot → outputs\04_features\arcface_embedding_tsne.png
+2026-04-22 00:46:35,666 [INFO] src.visualization — PCA 2D plot → outputs\04_features\arcface_embedding_pca.png
+2026-04-22 00:46:35,887 [INFO] src.visualization — Embedding histogram → outputs\04_features\embedding_histogram.png
+2026-04-22 00:46:36,034 [INFO] src.visualization — HOG visualization → outputs\04_features\hog_visualization_sample.png
+2026-04-22 00:46:36,251 [INFO] src.visualization — Pixel histogram → outputs\04_features\pixel_intensity_histogram.png
+2026-04-22 00:46:36,254 [INFO] src.visualization — Feature comparison table → outputs\04_features\feature_comparison_table.csv
+2026-04-22 00:46:36,256 [INFO] src.train — Split: 280 train / 120 test (40 classes)
+2026-04-22 00:46:36,256 [INFO] src.train — Training KNN k=1 (cosine metric)…
+2026-04-22 00:46:36,257 [INFO] src.train —   KNN k=1 trained in 0.001s
+2026-04-22 00:46:36,257 [INFO] src.train — Training KNN k=3 (cosine metric)…
+2026-04-22 00:46:36,257 [INFO] src.train —   KNN k=3 trained in 0.000s
+2026-04-22 00:46:36,258 [INFO] src.train — Training KNN k=5 (cosine metric)…
+2026-04-22 00:46:36,258 [INFO] src.train —   KNN k=5 trained in 0.000s
+2026-04-22 00:46:36,258 [INFO] src.train — Training CosineThresholdMatcher (threshold=0.4)…
+2026-04-22 00:46:36,258 [INFO] src.classifier — CosineThresholdMatcher fitted on 280 samples.
+2026-04-22 00:46:36,259 [INFO] src.train — Best classifier (KNN k=1) saved → models\classifier.pkl
+2026-04-22 00:46:36,314 [INFO] src.evaluate — Accuracy: 1.0000 | F1: 1.0000 | Inf: 18.0ms
+2026-04-22 00:46:36,335 [INFO] src.evaluate — Accuracy: 1.0000 | F1: 1.0000 | Inf: 17.2ms
+2026-04-22 00:46:36,356 [INFO] src.evaluate — Accuracy: 1.0000 | F1: 1.0000 | Inf: 17.0ms
+2026-04-22 00:46:36,360 [INFO] src.evaluate — Accuracy: 1.0000 | F1: 1.0000 | Inf: 0.4ms
+2026-04-22 00:46:36,862 [INFO] src.evaluate — Confusion matrix → outputs\06_metrics\confusion_matrix.png
+2026-04-22 00:46:36,867 [INFO] src.evaluate — Classification report → outputs\06_metrics\classification_report.txt
+2026-04-22 00:46:36,868 [INFO] src.evaluate — Performance metrics → outputs\06_metrics\performance_metrics.csv
+2026-04-22 00:46:36,869 [INFO] src.evaluate — Before/after tuning → outputs\06_metrics\before_after_tuning.csv
+2026-04-22 00:46:36,870 [INFO] src.train — Split: 280 train / 120 test (40 classes)
+2026-04-22 00:46:38,328 [INFO] src.evaluate — Prediction grid → outputs\05_results\predictions_with_bboxes.png
+2026-04-22 00:46:39,787 [INFO] src.evaluate — Prediction grid → outputs\05_results\correct_predictions_grid.png
+2026-04-22 00:46:39,787 [WARNING] src.evaluate — No images for incorrect_predictions_grid.png
+2026-04-22 00:46:40,726 [INFO] src.evaluate — Annotated predictions → outputs\08_extra_ipcv\annotated_predictions.png
+2026-04-22 00:46:40,731 [INFO] src.predict — Classifier and embeddings loaded.
+2026-04-22 00:46:40,731 [INFO] src.embeddings — Initialising InsightFace model 'buffalo_l' (may download on first run)…
+2026-04-22 00:46:41,592 [INFO] src.embeddings — InsightFace ready.
+2026-04-22 00:46:41,750 [INFO] src.predict — Predicted: s5 | Confidence: 1.0000 | Inference: 22.1ms
+2026-04-22 00:46:41,825 [INFO] src.predict — Inference demo saved → outputs\05_results\inference_demo_single.png
+2026-04-22 00:46:42,076 [INFO] src.visualization — Pipeline diagram → outputs\07_pipeline\pipeline_diagram.png

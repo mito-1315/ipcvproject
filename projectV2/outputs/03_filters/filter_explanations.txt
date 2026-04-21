@@ -1,0 +1,58 @@
+============================================================
+Filter Explanations — Project Version Two (OpenCV)
+ORL/AT&T Face Recognition using ArcFace + InsightFace
+============================================================
+
+1. HISTOGRAM EQUALIZATION  (cv2.equalizeHist)
+──────────────────────────────────────────────
+Rationale:
+  ORL images were captured under varying lighting across sessions.
+  Histogram equalization stretches the intensity histogram to span
+  0-255, normalising brightness differences between subjects.
+  This reduces lighting-induced variability before ArcFace embedding.
+
+Code:
+  gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
+  eq   = cv2.equalizeHist(gray)
+
+──────────────────────────────────────────────────────────────
+
+2. GAUSSIAN BLUR  (cv2.GaussianBlur, 5×5, sigma=0)
+────────────────────────────────────────────────────
+Rationale:
+  Gaussian noise from CCD sensors is attenuated by a low-pass
+  Gaussian kernel. The 5×5 kernel removes fine noise while keeping
+  macro facial structure (shape, shadow gradients) for ArcFace's
+  convolutional layers intact.
+
+Code:
+  blur = cv2.GaussianBlur(gray, (5, 5), 0)
+
+──────────────────────────────────────────────────────────────
+
+3. MEDIAN FILTER  (cv2.medianBlur, kernel=3)
+─────────────────────────────────────────────
+Rationale:
+  Median filtering removes salt-and-pepper (impulse) noise robustly
+  because the median is insensitive to extreme outliers. Unlike mean
+  filters it preserves sharp facial feature edges (eye corners, lip
+  lines) critical for ArcFace's edge-sensitive early layers.
+
+Code:
+  med = cv2.medianBlur(gray, 3)
+
+──────────────────────────────────────────────────────────────
+
+4. UNSHARP MASKING / SHARPENING  (cv2.addWeighted)
+────────────────────────────────────────────────────
+Rationale:
+  Boosting high-frequency edges enhances facial landmarks (eyelid
+  folds, nasal ridges) that contribute most to ArcFace's 512-dim
+  embedding. Subtracting a heavy Gaussian blur from the original
+  creates a "residual edge map" added back with gain 1.5.
+
+Code:
+  blurred = cv2.GaussianBlur(gray, (9, 9), 10.0)
+  sharp   = cv2.addWeighted(gray, 1.5, blurred, -0.5, 0)
+
+──────────────────────────────────────────────────────────────
